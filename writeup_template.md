@@ -17,11 +17,8 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Recovery Image"
+[image1]: ./WorkFlow.JPG "Model Visualization"
+[image2]: ./Images.JPG "Grayscaling"
 [image5]: ./model_summary.JPG "Model Summary"
 [image7]: ./Mean_Square_model.JPG "Mean_Square_Model"
 
@@ -123,21 +120,28 @@ Here is the model summary of my CNN
 
 ![alt text][image5]
 
+Below is given the visualization of the images
+
+![alt text][image1]:
+
 
 #### 3. Creation of the Training Set & Training Process
 
 I used Udacity recorded data provided as my Training data. Here is an example image of center lane driving:
 
+I randomly shuffled the data set and put 20% of the data into a validation set saving the data in train_samples and validation_samples. 
 
-To augment the data sat, I also flipped images and angles thinking that this would increase my data to 3 times.I used function cv2.flip to flip it horizontally.
+To augment the data sat, I also flipped images and angles thinking that this would increase my data to 3 times.
+Because without flipping the images were zero centered and due which it was going towards right direction for my data set thus what i did was that I used function cv2.flip to flip it horizontally.Below is the normalized image with 3 camera angle view i.e. Center,Left and right.After flipping car remained on the track for most of the time since I have used CV2 therefore i made changes in drive.py where i converted images to BGR so no conflicts happen for it.
 
+![alt text][image2]:
 
 
 After the collection process, I had X number of data points. I then  pre-processed this data by using lambda function by normalizing it and bring it to mean center followed by cropping of data.
 
+I finally randomly shuffled the each batch sample before each epoch.
 
-I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
 ![alt text][image7]
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 as evidenced by decrease in loss and graph plotted above between validation loss and training loss.I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 3 as evidenced by decrease in loss and graph plotted above between validation loss and training loss but for each training my model was plotting different graph which was difficult to identify the minimum overfitting.I used an adam optimizer so that manually training the learning rate wasn't necessary.
