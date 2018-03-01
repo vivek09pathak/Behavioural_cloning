@@ -66,9 +66,7 @@ The model used an adam optimizer, so the learning rate was not tuned manually (m
 
 #### 4. Appropriate training data
 
-Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road ... 
-
-For details about how I created the training data, see the next section. 
+Training data was chosen from the Udacity sample provided to use the data for further increasing the data I flipped the data which increased 3 time for both three cameras view each.
 
 ### Model Architecture and Training Strategy
 
@@ -132,7 +130,7 @@ I used Udacity recorded data provided as my Training data. Here is an example im
 I randomly shuffled the data set and put 20% of the data into a validation set saving the data in train_samples and validation_samples. 
 
 To augment the data sat, I also flipped images and angles thinking that this would increase my data to 3 times.
-Because without flipping the images were zero centered and due which it was going towards right direction for my data set thus what i did was that I used function cv2.flip to flip it horizontally.Below is the normalized image with 3 camera angle view i.e. Center,Left and right.After flipping car remained on the track for most of the time since I have used CV2 therefore i made changes in drive.py where i converted images to BGR so no conflicts happen for it.
+Because without flipping the images were zero centered and due which it was going towards right direction for my data set thus what i did was that I used function cv2.flip to flip it horizontally for all three angle view cameras i.e. center,right and left.Below is the normalized image with 3 camera angle view i.e. Center,Left and right.After flipping car remained on the track for most of the time since I have used CV2 therefore i made changes in drive.py where i converted images to BGR so no conflicts happen for it.
 
 ![alt text][image2]:
 
