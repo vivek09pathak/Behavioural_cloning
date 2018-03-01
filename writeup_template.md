@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 [image4]: ./examples/placeholder_small.png "Recovery Image"
 [image5]: ./examples/placeholder_small.png "Recovery Image"
 [image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
+[image7]: ./Behavioural_cloning/Mean_Square_model.JPG "Mean_Square_Model"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -128,7 +128,7 @@ I used Udacity recorded data provided as my Training data. Here is an example im
 To augment the data sat, I also flipped images and angles thinking that this would increase my data to 3 times.For example, here is an image that has then been flipped:
 
 ![alt text][image6]
-![alt text][image7]
+
 
 
 After the collection process, I had X number of data points. I then  pre-processed this data by using lambda function by normalizing it and bring it to mean center followed by cropping of data.
@@ -136,4 +136,6 @@ After the collection process, I had X number of data points. I then  pre-process
 
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 as evidenced by decrease in loss and graph plotted below between validation loss and training loss.I used an adam optimizer so that manually training the learning rate wasn't necessary.
+![alt text][image7]:
+
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 as evidenced by decrease in loss and graph plotted above between validation loss and training loss.I used an adam optimizer so that manually training the learning rate wasn't necessary.
