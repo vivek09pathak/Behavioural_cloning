@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 [image4]: ./examples/placeholder_small.png "Recovery Image"
 [image5]: ./examples/placeholder_small.png "Recovery Image"
 [image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./Behavioural_cloning/Mean_Square_model.JPG "Mean_Square_Model"
+[image7]: ./Mean_Square_model.JPG "Mean_Square_Model"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
