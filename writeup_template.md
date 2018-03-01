@@ -82,7 +82,7 @@ In order to gauge how well the model was working, I split my image and steering 
 
 To combat the overfitting, I modified the model so that Validation set and Training set does not overtfit by adding MaxPooling with pool size as 2,2 and dropout layer with keep probs as 0.2
 
-Then I trained the data and ran epoch for 5 times as seeing the training loss and validation loss I saved the model as seeing the model had low loss with minimum overfitting between train and validation loss 
+Then I trained the data and ran epoch for 3 times as seeing the training loss and validation loss I saved the model as seeing the model had comparable low loss with minimum overfitting between train and validation loss 
 
 The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track... to improve the driving behavior in these cases, I modified the correction angle for steering right and left by subtracting center angle by 0.245 as the correction
 
