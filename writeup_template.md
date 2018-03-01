@@ -129,9 +129,7 @@ Here is the model summary of my CNN
 I used Udacity recorded data provided as my Training data. Here is an example image of center lane driving:
 
 
-To augment the data sat, I also flipped images and angles thinking that this would increase my data to 3 times.For example, here is an image that has then been flipped:
-
-![alt text][image6]
+To augment the data sat, I also flipped images and angles thinking that this would increase my data to 3 times.I used function cv2.flip to flip it horizontally.
 
 
 
