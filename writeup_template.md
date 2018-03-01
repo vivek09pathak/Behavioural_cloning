@@ -21,8 +21,8 @@ The goals / steps of this project are the following:
 [image2]: ./examples/placeholder.png "Grayscaling"
 [image3]: ./examples/placeholder_small.png "Recovery Image"
 [image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
+[image6]: ./examples/placeholder_small.png "Recovery Image"
+[image5]: ./model_summary.JPG "Model Summary"
 [image7]: ./Mean_Square_model.JPG "Mean_Square_Model"
 
 ## Rubric Points
@@ -119,6 +119,10 @@ The final model architecture (model.py lines 113-136) consisted of a convolution
 |	Fully connected					|				10 out							|
 |	Fully connected					|				1 out							|
 
+Here is the model summary of my CNN
+
+![alt text][image5]
+
 
 #### 3. Creation of the Training Set & Training Process
 
@@ -136,6 +140,6 @@ After the collection process, I had X number of data points. I then  pre-process
 
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
-![alt text][image7]:
+![alt text][image7]
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 as evidenced by decrease in loss and graph plotted above between validation loss and training loss.I used an adam optimizer so that manually training the learning rate wasn't necessary.
