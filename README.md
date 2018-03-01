@@ -94,11 +94,12 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 #### 2. Final Model Architecture
 
 The final model architecture (model.py lines 113-136) consisted of a convolution neural network with the following layers and layer sizes 
+
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 160x320x3 RGB image   							|
-| Lamda Function                      | Normalize image divide by 255.0 and -0.5 mean center
-| Cropping          |  cropping((70,20),(0,0))
+| Lamda Function                      | Normalize image divide by 255.0 and -0.5 mean center |
+| Cropping          |  cropping((70,20),(0,0)) |
 | Convolution 5x5     	| 2x2 stride,  outputs 24x5x5 |
 | RELU					|												|
 | Convolution 5x5     	| 2x2 stride,  outputs 32x5x5 |
